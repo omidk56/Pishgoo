@@ -1,0 +1,35 @@
+{
+    "exchange": "nobitex",
+    "api_key": "YOUR_API_KEY_HERE",
+    "api_secret": "YOUR_API_SECRET_HERE",
+    "pairs": ["BTCIRT", "ETHIRT"],
+    "amount_per_trade": 5000000,
+    "risk": {
+        "stop_loss": 0.03,
+        "take_profit": 0.05,
+        "max_position_size": 0.2
+    },
+    "ai": {
+        "enabled": true,
+        "models": ["ml", "lstm", "prophet"],
+        "confidence_threshold": 0.7
+    },
+    "prophet": {
+        "enabled": true,
+        "forecast_periods": 24,
+        "seasonality_mode": "multiplicative"
+    },
+    "trading": {
+        "enabled": false,
+        "strategy": "hybrid_ai",
+        "timeframe": "1h"
+    },
+    "dashboard": {
+        "password": "pishgoo123",
+        "port": 8501,
+        "host": "0.0.0.0"
+    }
+}
+
+
+
